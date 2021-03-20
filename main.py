@@ -8,7 +8,7 @@ app = Flask(__name__)
            def info(talk):
             result = hashlib.md5(talk.encode())
             final = result.hexdigest()
-           return f"The hexadecimal equivalent of hash is: {final}"
+           return f"The hexadecimal equivalent of hash is: {final}" 
 
 @app.route('/fibonacci/<int:val>')
            def term(val):
@@ -28,7 +28,7 @@ app = Flask(__name__)
            def bit(x):
                       output = 1
                       if x < 0:
-                                 return('You must provide a positive number')
+                                 return('You must provide a positive number') 
                       else:
                                  while x > 0:
                                             output = output * x
